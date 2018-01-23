@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <title>Game</title>
+</head>
+<body id="body-utama">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+            <img src="img/games.png" width="45" height="43" class="d-inline-block align-top" alt="">
+                <!-- <a class="navbar-brand" href="#">Add Friends</a> -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Add Friends</a>
+                    </li>
+                  </ul>
+                  <ul class="navbar-nav ml-auto" data-toggle="modal" data-target="#modalLogin">
+                      <li class="tombolLogin">
+                            <button type="button" class="btn btn-success">Login</button>
+                      </li>
+                  </ul>
+                </div>
+              </nav>
+                <div class="content">
+                    <div class="content__container">
+                    <p class="content__container__text">
+                        Hello
+                    </p>
+                    
+                    <ul class="content__container__list">
+                        <li class="content__container__list__item">world!</li>
+                        <li class="content__container__list__item">gamers!</li>
+                        <li class="content__container__list__item">friends!</li>
+                        <li class="content__container__list__item">everybody!</li>
+                    </ul>
+                    </div>
+                </div>
+                <!-- CARDS BUAT SIGNUP -->
+                <div id="card-signup" class="card floating">
+                  <div class="card-body">
+                    <h1 class="card-title">Sign Up</h1>
+                    <p class="card-text">Sign up first, and you can find friendship!</p>
+                    <hr>
+                    <form class="form-horizontal" method="" action="">
+                          <div class="form-group">
+                            <label class="col-md-4 control-label">Email</label>
+                            <div class="col-md-10">
+                              <input id="email" type="email" class="form-control" name="email" value="">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                              <label class="col-md-4 control-label">Nama</label>
+                              <div class="col-md-10">
+                                <input id="nama" type="text" class="form-control" name="name" value="">
+                              </div>
+                            </div>
+                          <div class="form-group">
+                            <label class="col-md-4 control-label">Password</label>
+                            <div class="col-md-10">
+                              <input id="password-field" type="password" class="form-control" name="pass">
+                              <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <div class="col-md-6">
+                              <input id="SIGNUP" type="button" value ="Sign-Up" class="btn btn-info"></input>
+                            </div>
+                          </div>
+                    </form>
+                  </div>
+                </div>
+                <BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR>
+                  <BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR>
+                    <BR><BR>
+            <!-- FOOTER SECTION -->
+            <nav class="navbar navbar-expand-lg navbar-light">
+              <a class="navbar-brand" href="#">FOOTER</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <p> &copy; Copyright 2018</p>
+              </div>
+            </nav>
+            <!-- modal box
+               <!-- Modal -->
+               <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body" style="width: 100%">
+                            <form class="form-horizontal" method="" action="">
+                                <div class="form-group">
+                                  <label class="col-md-4 control-label">Username</label>
+                                  <div class="col-md-6">
+                                    <input type="email" class="form-control" name="email" value="">
+                                  </div>
+                                </div>
+                                <div class="form-group">
+                                  <label class="col-md-4 control-label">Password</label>
+                                  <div class="col-md-6">
+                                    <input id="password-login" type="password" class="form-control" name="password" value="secret">
+                                  </div>
+                                </div>
+                                <div class="form-group">
+                                  <div class="col-md-6">
+                                    <input type="button" value ="Login" class="btn btn-success" onclick="validate(form.usr.value, form.pass.value)"></input>
+                                  </div>
+                                </div>
+                              </form>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                     <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+     <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.js", integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=", crossorigin="anonymous"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+           <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+      <script src="js/index.js"></script>
+</body>
+</html>
+
+
+

@@ -1,0 +1,19 @@
+{
+  "name": "client",
+  "version": "1.0.0",
+  "description": "bikin add friend pake nodeJS(tampilan)",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "tegarjgap & mosaarya",
+  "license": "MIT",
+  "dependencies": {
+    "consolidate": "^0.15.0",
+    "express": "^4.16.2",
+    "jquery": "^3.2.1",
+    "mustache": "^2.3.0",
+    "nodemon": "^1.14.11"
+  }
+}

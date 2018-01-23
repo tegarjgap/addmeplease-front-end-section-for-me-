@@ -1,0 +1,21 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "bikin add friend pake nodeJS",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "tegarjgap & mosaarya",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "consolidate": "^0.15.0",
+    "express": "^4.16.2",
+    "mongoose": "^5.0.0",
+    "morgan": "^1.9.0",
+    "mustache": "^2.3.0",
+    "nodemon": "^1.14.11"
+  }
+}
